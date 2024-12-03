@@ -46,7 +46,7 @@ The primary goal of this project is to build a comprehensive database to *analyz
 - Variants and their associated severity levels.
 - Healthcare system capacity and utilization.
 - Economic impacts of the pandemic on a regional and global scale.
-By providing a centralized repository for pandemic-related data, the project aims to *support strategic decision-making* by organizations such as the WHO (World Health Organization), such as allocating healthcare resources or planning vaccination campaigns.
+By providing a centralized repository for pandemic-related data, the project aims to *support strategic decision-making* for organizations like the WHO (World Health Organization). For example, the WHO can use the database to determine allocation of healthcare resources or for the planning of vaccination campaigns.
 ## Key Outcomes
 This project delivers:
 
