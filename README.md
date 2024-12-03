@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/600148c0-eea4-452c-aa5a-956739a75d1b)# MIST4610_COVID_Database
+# MIST4610_COVID_Database
 ## Team Name:
 The RockLobsters
 ## Team Members:
