@@ -15,10 +15,7 @@ The RockLobsters
   - [Project Scope](#project-scope)
   - [Ensuring Data Integrity](#ensuring-data-integrity)
 - [1. The Data Model](#1-the-data-model)
-  - [1.1 Entities](#11-entities)
-  - [1.2 Attributes](#12-attributes)
-  - [1.3 Relationships](#13-relationships)
-  - [1.4 Identifiers](#14-identifiers)
+  - [1.1 Country and Demographics]
 - [2. Data Dictionary](#2-data-dictionary)
   - [2.1 Country and Demographics](#21-country-and-demographics)
   - [2.2 Healthcare System](#22-healthcare-system)
@@ -203,7 +200,8 @@ This group captures details about vaccines, COVID-19 variants, and the symptoms 
     - The Patients and Cases group to track variant-related cases and patient symptoms.
  
 ## 1.5 ERR Diagram
-![image](https://github.com/user-attachments/assets/752a3174-8ace-47ff-a163-f2919c7263c0)
+![image](https://github.com/user-attachments/assets/a2a939fd-941d-4d40-bd00-98fb23ff39de)
+
 
 
 # 2. Data Dictionary
