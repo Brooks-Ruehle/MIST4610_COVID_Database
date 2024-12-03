@@ -47,6 +47,7 @@ The primary goal of this project is to build a comprehensive database to *analyz
 - Variants and their associated severity levels.
 - Healthcare system capacity and utilization.
 - Economic impacts of the pandemic on a regional and global scale.
+
 By providing a centralized repository for pandemic-related data, the project aims to *support strategic decision-making* for organizations like the WHO (World Health Organization). For example, the WHO can use the database to determine allocation of healthcare resources or for the planning of vaccination campaigns.
 ## Key Outcomes
 This project delivers:
@@ -54,6 +55,7 @@ This project delivers:
 - A relational database with 14 interconnected entities designed for efficient querying and analysis.
 - Advanced SQL queries addressing real-world managerial questions.
 - Tableau visualizations and an interactive dashboard for intuitive exploration of the data.
+
 These deliverables collectively address key challenges faced during the pandemic, offering stakeholders a reliable tool to analyze critical data and act on insights. The usability of the database by project stakeholders was also central to designing the database. With that kept in mind, this database was made with scalability and the possiblity of another pandemic happening in the future where this type of database could be fitted to that pandemic.
 ## Project Scope
 This project focuses on creating a robust relational database to analyze key aspects of the COVID-19 pandemic. While the goal is to simulate a database capable of supporting a global organization like the World Health Organization (WHO), the scale of data required for such a database—spanning multiple years, countries, and demographics—is beyond the capacity of a four-person team working within a limited timeframe.
