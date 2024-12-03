@@ -105,11 +105,13 @@ This group represents the infrastructure and personnel involved in delivering he
     - Logs information about staff working at healthcare facilities.
 - *Vaccination_Center*:
     - Tracks vaccination sites, doses allocated, and doses used.
+ 
 **Relationships**
 - Healthcare Facility ↔ Healthcare Worker:
     - A facility can employ many workers, but each worker is assigned to one facility (idHealthcareFacility FK in Healthcare Worker).
 - Healthcare Facility ↔ Vaccination Center:
     - A facility may host multiple vaccination centers, but each center operates within one facility (idHealthcareFacility FK in Vaccination Center).
+  
 **Identifiers**
 - Primary Keys:
     - idHealthcareFacility in Healthcare Facility.
@@ -118,6 +120,7 @@ This group represents the infrastructure and personnel involved in delivering he
 - Foreign Keys:
     - idHealthcareFacility in Healthcare Worker references Healthcare Facility.idHealthcareFacility.
     - idHealthcareFacility in Vaccination Center references Healthcare Facility.idHealthcareFacility.
+ 
 **Inter-Group Relationships**
 
 - The Healthcare System group ties to:
@@ -136,6 +139,7 @@ This group tracks patient-level information, COVID-19 cases, hospitalizations, a
     - Logs details of hospital admissions, ICU stays, and discharge dates.
 - *Contact Tracing*:
     - Records interactions between patients to map the spread of the virus.
+  
 **Relationships**
 - Patient ↔ COVID Case:
     - A patient can have multiple cases, but each case belongs to one patient (idPatient FK in COVID Case).
@@ -143,6 +147,7 @@ This group tracks patient-level information, COVID-19 cases, hospitalizations, a
     - A patient can be hospitalized multiple times, but each hospitalization is linked to one patient (idPatient FK in Hospitalization).
 - Patient ↔ Contact Tracing:
     - Contact tracing logs interactions between two patients (idPatient1 and idPatient2 FKs in Contact Tracing).
+  
 **Identifiers**
 - Primary Keys:
     - idPatient in Patient.
@@ -152,6 +157,7 @@ This group tracks patient-level information, COVID-19 cases, hospitalizations, a
 - Foreign Keys:
     - idPatient in COVID Case references Patient.idPatient.
     - idPatient in Hospitalization references Patient.idPatient.
+  
 **Inter-Group Relationships**
 - The Patients and Cases group links to:
     - The Healthcare System group through hospitalizations and healthcare facilities.
@@ -171,6 +177,7 @@ This group captures details about vaccines, COVID-19 variants, and the symptoms 
     - Lists possible symptoms of COVID-19, along with their severity and descriptions.
 - *Patient Symptoms*:
     - Links patients to the symptoms they experienced and their duration.
+  
 **Relationships**
 - Vaccine Record ↔ Country:
     - A vaccine record belongs to one country but can include multiple doses (idCountry FK in Vaccine Record).
@@ -178,6 +185,7 @@ This group captures details about vaccines, COVID-19 variants, and the symptoms 
     - Links patients to the symptoms they experienced (idPatient FK in Patient Symptoms).
 - COVID Case ↔ COVID Variant:
     - Each COVID case is linked to one variant (idCOVIDVariant FK in COVID Case).
+  
 **Identifiers**
 - Primary Keys:
     - idVaccineType in Vaccine Type.
@@ -188,6 +196,7 @@ This group captures details about vaccines, COVID-19 variants, and the symptoms 
 - Foreign Keys:
     - idCountry in Vaccine Record references Country.idCountry.
     - idPatient in Patient Symptoms references Patient.idPatient.
+  
 **Inter-Group Relationships**
 - The Vaccination and Variants group connects to:
     - The Country and Demographics group for vaccine distribution and variant origins.
