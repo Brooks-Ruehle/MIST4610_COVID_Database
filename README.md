@@ -9,6 +9,7 @@ The RockLobsters
 
 # Table of Contents
 - [Introduction](#introduction)
+  - [Background](#background)
   - [Project Objectives](#project-objectives)
   - [Key Outcomes](#key-outcomes)
   - [Project Scope](#project-scope)
@@ -34,14 +35,35 @@ The RockLobsters
 - [7. Conclusion](#7-conclusion)
 
 # Introduction
+
+## Background
+In 2020, at the start of the COVID-19 pandemic, Johns Hopkins University released the Coronavirus Resource Center (CRC), which "collects and analyzes the best data available on cases, deaths, tests, hospitalizations, and vaccines to help the public, policymakers, and healthcare professionals worldwide respond to the pandemic." Recognized by TIME Magazine as one of the top inventions of 2020 and "2020's go-to data source," the CRC highlighted the critical role of data-driven insights in combating a global health crisis.
+
+Inspired by this resource, this project aims to design and implement a relational database and analytical toolkit that captures the multifaceted impact of COVID-19, including vaccination progress, healthcare system strain, and economic repercussions.
 ## Project Objectives
-
+The primary goal of this project is to build a comprehensive database to *analyze and visualize key aspects of the COVID-19 pandemic*. Using advanced SQL queries and Tableau dashboards, this project empowers decision-makers with actionable insights into:
+- Vaccination progress across countries.
+- Variants and their associated severity levels.
+- Healthcare system capacity and utilization.
+- Economic impacts of the pandemic on a regional and global scale.
+By providing a centralized repository for pandemic-related data, the project aims to *support strategic decision-making* by organizations such as the WHO (World Health Organization), such as allocating healthcare resources or planning vaccination campaigns.
 ## Key Outcomes
+This project delivers:
 
+- A relational database with 14 interconnected entities designed for efficient querying and analysis.
+- Advanced SQL queries addressing real-world managerial questions.
+- Tableau visualizations and an interactive dashboard for intuitive exploration of the data.
+These deliverables collectively address key challenges faced during the pandemic, offering stakeholders a reliable tool to analyze critical data and act on insights. The usability of the database by project stakeholders was also central to designing the database. With that kept in mind, this database was made with scalability and the possiblity of another pandemic happening in the future where this type of database could be fitted to that pandemic.
 ## Project Scope
+This project focuses on creating a robust relational database to analyze key aspects of the COVID-19 pandemic. While the goal is to simulate a database capable of supporting a global organization like the World Health Organization (WHO), the scale of data required for such a database—spanning multiple years, countries, and demographics—is beyond the capacity of a four-person team working within a limited timeframe.
 
+To ensure feasibility and meaningful insights, the database is scoped to include data from the year 2020. This approach allows for the creation of a functional and accurate database while demonstrating its potential for scalability in future expansions.
 ## Ensuring Data Integrity
+Data integrity was maintained through a combination of public data sources and logical data generation. Where available, information was sourced from reputable websites such as the World Health Organization, Our World in Data, and The World Bank.
 
+For entities like patient-level records and healthcare center details, data generation was necessary due to HIPAA restrictions and the unavailability of sensitive information. Generated data was designed to align with real-world patterns for authenticity and consistency.
+
+Hosting the database on AWS's RDS free service enabled seamless collaboration while ensuring data accuracy across all entities.
 # 1. The Data Model
 
 ## 1.1 Entities
