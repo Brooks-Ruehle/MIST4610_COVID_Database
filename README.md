@@ -7,6 +7,9 @@ The RockLobsters
 3. Charlie Davis | (@cbdcharlie)
 4. Abhi Kode | (@)
 
+# Table of Contents
+[TOC]
+
 # Introduction
 ## Project Objectives
 
