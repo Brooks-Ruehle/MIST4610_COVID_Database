@@ -8,7 +8,30 @@ The RockLobsters
 4. Abhi Kode | (@)
 
 # Table of Contents
-[TOC]
+- [Introduction](#introduction)
+  - [Project Objectives](#project-objectives)
+  - [Key Outcomes](#key-outcomes)
+  - [Project Scope](#project-scope)
+  - [Ensuring Data Integrity](#ensuring-data-integrity)
+- [1. The Data Model](#1-the-data-model)
+  - [1.1 Entities](#11-entities)
+  - [1.2 Attributes](#12-attributes)
+  - [1.3 Relationships](#13-relationships)
+  - [1.4 Identifiers](#14-identifiers)
+- [2. Data Dictionary](#2-data-dictionary)
+  - [2.1 Country and Demographics](#21-country-and-demographics)
+  - [2.2 Healthcare System](#22-healthcare-system)
+  - [2.3 Patients and Cases](#23-patients-and-cases)
+  - [2.4 Vaccination and Variants](#24-vaccination-and-variants)
+- [3. SQL Queries](#3-sql-queries)
+  - [Query 1: Vaccination Progress](#query-1-vaccination-progress)
+- [4. Tableau Visualizations](#4-tableau-visualizations)
+  - [Visualization 1](#visualization-1)
+  - [Visualization 2](#visualization-2)
+  - [Visualization 3](#visualization-3)
+- [5. Tableau Dashboard](#5-tableau-dashboard)
+- [6. Access Section (Optional)](#6-access-section-optional)
+- [7. Conclusion](#7-conclusion)
 
 # Introduction
 ## Project Objectives
