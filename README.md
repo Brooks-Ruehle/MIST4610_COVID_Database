@@ -15,7 +15,11 @@ The RockLobsters
   - [Project Scope](#project-scope)
   - [Ensuring Data Integrity](#ensuring-data-integrity)
 - [1. The Data Model](#1-the-data-model)
-  - [1.1 Country and Demographics]
+  - [1.1 Country and Demographics](#11-country-and-demographics)
+  - [1.2 Healthcare System](#12-healthcare-system)
+  - [1.3 Patients and Cases](#13-patients-and-cases)
+  - [1.4 Vaccination and Variants](#14-vaccination-and-variants)
+  - [1.5 ERR Diagram](#15-err-diagram)
 - [2. Data Dictionary](#2-data-dictionary)
   - [2.1 Country and Demographics](#21-country-and-demographics)
   - [2.2 Healthcare System](#22-healthcare-system)
