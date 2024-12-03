@@ -5,7 +5,7 @@ The RockLobsters
 1. Brooks Ruehle | (@Brooks-Ruehle)
 2. Will Jenkins | (@willjenkins-Glitch)
 3. Charlie Davis | (@cbdcharlie)
-4. Abhi Kode | (@)
+4. Abhi Kode | (@abikod)
 
 # Table of Contents
 - [Introduction](#introduction)
