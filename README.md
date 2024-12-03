@@ -201,6 +201,10 @@ This group captures details about vaccines, COVID-19 variants, and the symptoms 
 - The Vaccination and Variants group connects to:
     - The Country and Demographics group for vaccine distribution and variant origins.
     - The Patients and Cases group to track variant-related cases and patient symptoms.
+ 
+## 1.5 ERR Diagram
+![image](https://github.com/user-attachments/assets/752a3174-8ace-47ff-a163-f2919c7263c0)
+
 
 # 2. Data Dictionary
 For clarity, this is organized by functional group to simplify understanding of the database.
