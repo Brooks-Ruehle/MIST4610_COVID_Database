@@ -33,7 +33,7 @@ The RockLobsters
   - [Visualization 3](#visualization-3)
 - [5. Tableau Dashboard](#5-tableau-dashboard)
 - [6. Access Section (Optional)](#6-access-section-optional)
-- [7. Conclusion](#7-conclusion)
+- [8. Conclusion](#8-conclusion)
 
 # Introduction
 
@@ -278,5 +278,7 @@ The dashboard enhances decision-making by integrating key insights into one acce
 
 # 6. Access Section (maybe add)
 
-# 7. Conclusion
+# 7. What Could Be Improved?
+
+# 8. Conclusion
 The `COVIDDatabase` provides a comprehensive relational database and analytical toolkit for understanding the COVID-19 pandemic. By integrating advanced SQL queries, Tableau visualizations, and AWS RDS hosting, the project offers actionable insights for decision-making.
