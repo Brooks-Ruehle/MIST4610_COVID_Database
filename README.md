@@ -77,19 +77,23 @@ This group focuses on country-level data, including demographics, population sta
     - Tracks demographic, population, and healthcare-related metrics for each country.
 - *Economic_Impact*:
     - Captures changes in GDP and employment rates due to the pandemic.
+
 **Relationships**
 - Country ↔ Economic Impact:
     - A country can have multiple economic impact records, but each record belongs to one country (idCountry FK in Economic Impact).
+ 
 **Identifiers**
 - Primary Keys:
     - idCountry in Country.
     - idEconomicImpact in Economic Impact.
 - Foreign Keys:
     - idCountry in Economic Impact references Country.idCountry.
+
 **Inter-Group Relationships**
 - The Country and Demographics group connects to:
     - The Healthcare System group via healthcare facilities that operate within countries.
     - The Vaccination and Variants group for tracking vaccine distribution and variant origins.
+
 
 ## 1.2 Healthcare System
 This group represents the infrastructure and personnel involved in delivering healthcare services, including vaccination efforts.
