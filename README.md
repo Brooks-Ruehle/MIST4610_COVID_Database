@@ -83,7 +83,9 @@ This group focuses on country-level data, including demographics, population sta
 
 **Relationships**
 - Country ↔ Economic Impact:
-    - A country can have multiple economic impact records, but each record belongs to one country (idCountry FK in Economic Impact).
+    - Modality: Not mandatory for Economic Impact as not every country has economic data.
+    - Type: One-to-Many, Non-Identifying; a country can have multiple economic impact records, but each record exists independently of the country.
+    - Foreign Key: idCountry in Economic Impact references Country.idCountry..
  
 **Identifiers**
 - Primary Keys:
@@ -111,9 +113,17 @@ This group represents the infrastructure and personnel involved in delivering he
  
 **Relationships**
 - Healthcare Facility ↔ Healthcare Worker:
-    - A facility can employ many workers, but each worker is assigned to one facility (idHealthcareFacility FK in Healthcare Worker).
+    - Modality: Optional for Healthcare Worker as not all facilities have associated workers in their records.
+    - Type:  One-to-Many, Non-identifying; a worker’s existence does not depend on a healthcare facility because they do not have to currently work at a healthcare facility.
+    - Foreign Key: idHealthcareFacility in Healthcare Worker references Healthcare Facility.idHealthcareFacility.
 - Healthcare Facility ↔ Vaccination Center:
-    - A facility may host multiple vaccination centers, but each center operates within one facility (idHealthcareFacility FK in Vaccination Center).
+    - Modality: Mandatory for Vaccination Center as every center must belong to a healthcare facility.
+    - Type: One-to-One, Non-Identifying; the vaccination center exists independently of the facility but is logically tied to it.
+    - Foreign Key: idHealthcareFacility in Vaccination Center references Healthcare Facility.idHealthcareFacility.
+- Healthcare Worker ↔ Healthcare Worker (recursive to signify worker working for boss)
+    - Modality: Non-mandatory, not every healthcare worker has another worker working for them.
+    - Type: one-to-many, non-identifying, a worker does not depend on another worker to work at a healthcare facility
+    - Foreign Key: idBoss in Healthcare Worker signifies the worker's boss and who they work for.
   
 **Identifiers**
 - Primary Keys:
@@ -145,12 +155,18 @@ This group tracks patient-level information, COVID-19 cases, hospitalizations, a
   
 **Relationships**
 - Patient ↔ COVID Case:
-    - A patient can have multiple cases, but each case belongs to one patient (idPatient FK in COVID Case).
+    - Modality: Optional for COVID Case since not all COVID cases are associated with a patient (e.g., unreported or anonymous cases).
+    - Type: One-to-Many, Non-Identifying; the case exists independently of a patient.
+    - Foreign Key: idPatient in COVID Case references Patient.idPatient.
 - Patient ↔ Hospitalization:
-    - A patient can be hospitalized multiple times, but each hospitalization is linked to one patient (idPatient FK in Hospitalization).
+    - Modality: Optional for Hospitalization as not all patients are hospitalized.
+    - Type: One-to-Many, Identifying; the hospitalization record depends on the existence of a patient.
+    - Foreign Key: idPatient in Hospitalization references Patient.idPatient.
 - Patient ↔ Contact Tracing:
-    - Contact tracing logs interactions between two patients (idPatient1 and idPatient2 FKs in Contact Tracing).
-  
+    - Modality: Optional for Contact Tracing as not all patients are involved in tracing efforts.
+    - Type: Many-to-Many, Non-Identifying; the tracing records exist to map interactions but do not depend on patients for their logical existence.
+    - Foreign Keys: idPatient1 and idPatient2 in Contact Tracing reference Patient.idPatient.
+
 **Identifiers**
 - Primary Keys:
     - idPatient in Patient.
@@ -183,11 +199,17 @@ This group captures details about vaccines, COVID-19 variants, and the symptoms 
   
 **Relationships**
 - Vaccine Record ↔ Country:
-    - A vaccine record belongs to one country but can include multiple doses (idCountry FK in Vaccine Record).
+    - Modality: Optional for Vaccine Record since not all countries have vaccination records in the database.
+    - Type: Many-to-One, Identifying; the vaccine record depends on a specific country for its existence.
+    - Foreign Key: idCountry in Vaccine Record references Country.idCountry.
 - Patient ↔ Patient Symptoms:
-    - Links patients to the symptoms they experienced (idPatient FK in Patient Symptoms).
+    - Modality: Optional for Patient Symptoms as not all patients experience symptoms.
+    - Type: Many-to-Many, Identifying; the record depends on both the patient and the symptom for its existence.
+    - Foreign Keys: idPatient in Patient Symptoms references Patient.idPatient; idSymptom references Symptom.idSymptom.
 - COVID Case ↔ COVID Variant:
-    - Each COVID case is linked to one variant (idCOVIDVariant FK in COVID Case).
+    - Modality: Mandatory for COVID Case since each case must be associated with a variant.
+    - Type: Many-to-One, Non-Identifying; multiple cases can belong to one variant, but the cases exist independently of the variant.
+    - Foreign Key: idCOVIDVariant in COVID Case references COVID Variant.idCOVIDVariant.
   
 **Identifiers**
 - Primary Keys:
