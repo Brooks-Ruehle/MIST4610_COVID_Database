@@ -1,4 +1,4 @@
-# MIST4610_COVID_Database
+![image](https://github.com/user-attachments/assets/600148c0-eea4-452c-aa5a-956739a75d1b)# MIST4610_COVID_Database
 ## Team Name:
 The RockLobsters
 ## Team Members:
@@ -237,20 +237,42 @@ For clarity, this is organized by functional group to simplify understanding of 
 
 ## 2.1 Country and Demographics
 This group focuses on country-level data and demographic attributes, including healthcare spending, population, and pandemic impact.
-
-
+**Country**
+![image](https://github.com/user-attachments/assets/9f6c59c1-89f9-44ae-90bb-ca097025d67f)
+(only for the year 2020)
+**Economic Impact**
+![image](https://github.com/user-attachments/assets/92dc8c8e-4e39-47bb-a15b-cab344a4a893)
+(only for the year 2020)
 ## 2.2 Healthcare System
 This group includes data on healthcare facilities, workers, and vaccination centers.
-
-
+**Healthcare Facility**
+![image](https://github.com/user-attachments/assets/0a6d031c-8207-4020-9fec-9dd496a9243b)
+**Healthcare Worker**
+![image](https://github.com/user-attachments/assets/9937f14a-a188-4964-99fe-fbc40638a93b)
+**Vaccination Center**
+![image](https://github.com/user-attachments/assets/e307297c-80d4-4ac0-b89f-ffbdd4727cb2)
 ## 2.3 Patients and Cases
 Tracks individual-level patient data, their COVID-19 cases, and symptoms.
-
-
+**Patient**
+![image](https://github.com/user-attachments/assets/1c512943-d5cf-4322-b7e0-7193d883cf02)
+**Covid Case**
+![image](https://github.com/user-attachments/assets/eb587bad-3381-42d1-bc10-3bb734096405)
+**Hospitalization**
+![image](https://github.com/user-attachments/assets/5305107d-bf99-4bc2-a586-50585b261ce9)
+**Contact Tracing**
+![image](https://github.com/user-attachments/assets/94bd41a1-a955-4e60-9ec3-18335a71d556)
 ## 2.4 Vaccination and Variants
 Tracks vaccines and COVID variants.
-
-
+**Vaccine Type**
+![image](https://github.com/user-attachments/assets/ab370992-faa1-42ea-8dbb-741219564766)
+**Vaccine Record**
+![image](https://github.com/user-attachments/assets/8f67a87d-8255-4220-8e96-186ad24e841d)
+**COVID Variant**
+![image](https://github.com/user-attachments/assets/3e984e37-2b1c-462c-a3fd-1b55d0d047ce)
+**Symptom**
+![image](https://github.com/user-attachments/assets/00ed90f8-7d3b-4341-8f9c-fe53b608594a)
+**Patient Symptoms**
+![image](https://github.com/user-attachments/assets/2ae76338-b99d-4336-a8ff-9e590a75c54c)
 # 3. SQL Queries
 The following SQL queries are designed to extract actionable insights from the database. Each query addresses a critical question that can guide **managerial decisions** in the context of the COVID-19 pandemic. There are five queries below.
 
