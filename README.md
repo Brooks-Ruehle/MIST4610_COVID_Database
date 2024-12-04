@@ -276,24 +276,22 @@ Tracks vaccines and COVID variants.
 # 3. SQL Queries
 The following SQL queries are designed to extract actionable insights from the database. Each query addresses a critical question that can guide **managerial decisions** in the context of the COVID-19 pandemic. There are five queries below.
 
-### Query 1 Vaccination Progress (example not the actual query)
-**Question**: What percentage of the population in each country is vaccinated?  
-**Justification**: This query helps managers identify countries with low vaccination rates and allocate resources effectively to improve vaccination coverage.  
+### Query 1 GDP Change against average deathes per region
+**Question**: What is the average GDP change in Q2 against the average number of deathes per region.
+**Justification**: This query helps to show how average deathes might've affected the GDP for each region in the world.
 
 **Query**:
-```sql
-SELECT country.name, 
-       (SUM(vaccine_record.dosesAdministered) / country.population) * 100 AS vaccination_rate
-FROM vaccine_record
-JOIN country ON vaccine_record.idCountry = country.idCountry
-GROUP BY country.name
-ORDER BY vaccination_rate DESC;
-```
+
+<img width="1027" alt="Screenshot 2024-12-03 at 9 15 35 PM" src="https://github.com/user-attachments/assets/6afaa43c-e6fd-4e2b-bbe2-0e295ad4ce92">
+
 **Output**:
+
+<img width="386" alt="Screenshot 2024-12-03 at 9 15 48 PM" src="https://github.com/user-attachments/assets/49f2e505-4802-403a-8f62-cdad70de9c8d">
+
 
 **Insights**:
 
-
+Helps to show us how a the deathes can heavily impact GDP and also helps to show which regions might need more support.
 ### Query 2 Beds Per Person in each Country
 **Question**: What are the beds per person in each country?  
 **Justification**: This query helps managers identify countries that have a lot of beds for each population.  
