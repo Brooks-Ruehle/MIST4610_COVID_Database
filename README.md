@@ -293,6 +293,19 @@ ORDER BY vaccination_rate DESC;
 
 **Insights**:
 
+
+### Query 2 Beds Per Person in each Country
+**Question**: What are the beds per person in each country?  
+**Justification**: This query helps managers identify countries that have a lot of beds for each population.  
+
+**Query**:
+<img width="800" alt="Screenshot 2024-12-03 at 9 06 25 PM" src="https://github.com/user-attachments/assets/616d9263-4ddb-425c-8539-0f5dced76b38">
+
+**Output**:
+<img width="461" alt="Screenshot 2024-12-03 at 9 06 42 PM" src="https://github.com/user-attachments/assets/abcf5ecf-a035-4ed5-a67a-fd83bb43349c">
+
+
+**Insights**: We can see that countries, listed in alphabetical order, can have a low amount of beds per population in each country.
 # 4. Tableau Visualizations
 The Tableau visualizations provide **actionable insights** into key areas of the COVID-19 pandemic, complementing the SQL queries with interactive and visually intuitive data analysis. These visualizations are designed for managers to easily identify trends, disparities, and areas requiring intervention. All visualizations are integrated into an interactive Tableau dashboard for better usability.
 
