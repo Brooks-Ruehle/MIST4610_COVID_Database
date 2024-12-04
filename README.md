@@ -299,13 +299,33 @@ ORDER BY vaccination_rate DESC;
 **Justification**: This query helps managers identify countries that have a lot of beds for each population.  
 
 **Query**:
+
 <img width="800" alt="Screenshot 2024-12-03 at 9 06 25 PM" src="https://github.com/user-attachments/assets/616d9263-4ddb-425c-8539-0f5dced76b38">
 
 **Output**:
+
 <img width="461" alt="Screenshot 2024-12-03 at 9 06 42 PM" src="https://github.com/user-attachments/assets/abcf5ecf-a035-4ed5-a67a-fd83bb43349c">
 
 
 **Insights**: We can see that countries, listed in alphabetical order, can have a low amount of beds per population in each country.
+
+
+### Query 3 Hospitalizations per Healthcare Facility
+**Question**: Which healthcare facilities have the most hospitals? 
+**Justification**: This query helps managers identify facilities that might need more assistance.  
+
+**Query**:
+
+<img width="824" alt="Screenshot 2024-12-03 at 9 10 18 PM" src="https://github.com/user-attachments/assets/1354a0e7-9954-41e1-98cb-52370cc05df0">
+
+
+**Output**:
+
+<img width="475" alt="Screenshot 2024-12-03 at 9 10 36 PM" src="https://github.com/user-attachments/assets/1b82757c-1c25-4780-afb3-8497a67de524">
+
+
+
+**Insights**: We can see each healthcare facility along with the number of hospitalizations it has.
 # 4. Tableau Visualizations
 The Tableau visualizations provide **actionable insights** into key areas of the COVID-19 pandemic, complementing the SQL queries with interactive and visually intuitive data analysis. These visualizations are designed for managers to easily identify trends, disparities, and areas requiring intervention. All visualizations are integrated into an interactive Tableau dashboard for better usability.
 
