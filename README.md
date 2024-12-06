@@ -278,7 +278,8 @@ The following SQL queries are designed to extract actionable insights from the d
 
 ### Query 1 GDP Change against average deathes per region
 **Question**: What is the average GDP change in Q2 against the average number of deathes per region.
-**Justification**: This query helps to show how average deathes might've affected the GDP for each region in the world.
+
+**Justification**: This query helps to show how average deathes might relate to GDP changes by region. A stakeholder in the database, like a manager at WHO, can use this to determine which regions were most affected and therefore send more aid to those regions.
 
 **Query**:
 
@@ -291,7 +292,7 @@ The following SQL queries are designed to extract actionable insights from the d
 
 **Insights**:
 
-Helps to show us how a the deathes can heavily impact GDP and also helps to show which regions might need more support.
+Regions with lower average death rates seem to also have lower GDP canges in Quarter 2 of 2020. This is likely because regions with hgiher death rates and more exposure and transmission of the disease had to shut down more business and reduce activities in a wider range of industries that affect GDP more.
 ### Query 2 Beds Per Person in each Country
 **Question**: What are the beds per person in each country?  
 **Justification**: This query helps managers identify countries that have a lot of beds for each population.  
