@@ -283,7 +283,22 @@ The following SQL queries are designed to extract actionable insights from the d
 
 **Query**:
 
-<img width="1027" alt="Screenshot 2024-12-03 at 9 15 35 PM" src="https://github.com/user-attachments/assets/6afaa43c-e6fd-4e2b-bbe2-0e295ad4ce92">
+```
+SELECT 
+    Country.region AS Region, 
+    (SUM(Country.total_Deaths) / SUM(Country.population)) * 100000 AS Deaths_Per_100K,
+    AVG(Economic_Impact.GDP_Change) AS Avg_GDP_Change_Q2
+FROM 
+    Country
+JOIN 
+    Economic_Impact ON Country.idCountry = Economic_Impact.idCountry
+WHERE 
+    Economic_Impact.quarter = 2
+GROUP BY 
+    Country.region
+ORDER BY 
+    Deaths_Per_100K DESC;
+```
 
 **Output**:
 
@@ -299,7 +314,21 @@ Regions with lower average death rates seem to also have lower GDP canges in Qua
 
 **Query**:
 
-<img width="800" alt="Screenshot 2024-12-03 at 9 06 25 PM" src="https://github.com/user-attachments/assets/616d9263-4ddb-425c-8539-0f5dced76b38">
+```
+SELECT 
+    Country.name, 
+    Country.population AS Population,
+    SUM(Healthcare_Facility.capacity) AS Total_Beds,
+    SUM(Healthcare_Facility.capacity) / Country.population AS Beds_Per_Person
+FROM 
+    Country
+JOIN 
+    Healthcare_Facility ON Country.idCountry = Healthcare_Facility.idCountry
+GROUP BY 
+    Country.idCountry
+ORDER BY 
+    Beds_Per_Person DESC;
+```
 
 **Output**:
 
@@ -315,7 +344,21 @@ Regions with lower average death rates seem to also have lower GDP canges in Qua
 
 **Query**:
 
-<img width="824" alt="Screenshot 2024-12-03 at 9 10 18 PM" src="https://github.com/user-attachments/assets/1354a0e7-9954-41e1-98cb-52370cc05df0">
+```
+SELECT 
+    Healthcare_Facility.idHealthcare_Facility, 
+    Healthcare_Facility.name AS healthcare_facility_name,
+    COUNT(Hospitalization.idHospitalization) AS number_of_hospitalizations
+FROM 
+    Healthcare_Facility
+JOIN 
+    Hospitalization ON Healthcare_Facility.idHealthcare_Facility = Hospitalization.idHealthcare_Facility
+GROUP BY 
+    Healthcare_Facility.idHealthcare_Facility, 
+    Healthcare_Facility.name
+ORDER BY 
+    number_of_hospitalizations DESC;
+```
 
 
 **Output**:
