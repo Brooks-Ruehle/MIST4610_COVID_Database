@@ -309,8 +309,9 @@ ORDER BY
 
 Regions with lower average death rates seem to also have lower GDP canges in Quarter 2 of 2020. This is likely because regions with hgiher death rates and more exposure and transmission of the disease had to shut down more business and reduce activities in a wider range of industries that affect GDP more.
 ### Query 2 Beds Per Person in each Country
-**Question**: What are the beds per person in each country?  
-**Justification**: This query helps managers identify countries that have a lot of beds for each population.  
+**Question**: What is the number of hospital beds available per person in each country, and how does this vary across nations?
+
+**Justification**: This query provides critical insights for public health planning and crisis management. By calculating the number of beds per person, managers can gain a better understanding of the readiness of each country's healthcare system and identify countries with insufficient healthcare systems to more effectively allocate resources.
 
 **Query**:
 
@@ -335,13 +336,13 @@ ORDER BY
 <img width="461" alt="Screenshot 2024-12-03 at 9 06 42 PM" src="https://github.com/user-attachments/assets/abcf5ecf-a035-4ed5-a67a-fd83bb43349c">
 
 
-**Insights**: We can see that countries, listed in alphabetical order, can have a low amount of beds per population in each country.
+**Insights**: The results highlight significant disparities in healthcare capacity across countries, with some nations having a much higher number of beds per person compared to others. Countries with higher beds per person are likely better equipped to manage healthcare emergencies like COVID-19, while those with lower ratios may not be able to provide adequate care. This data underscores the need for certain investments in healthcare infrastructure in regions with not enough healthcare facility capacity. It also provides actionable insights for international aid and public health planning on a global scale.
 
 
 ### Query 3 Hospitalizations per Healthcare Facility
-**Question**: Which healthcare facilities have the most hospitals? 
-**Justification**: This query helps managers identify facilities that might need more assistance.  
+**Question**: Which healthcare facilities handle the highest number of hospitalizations, and how does the distribution of hospitalizations vary across facilities?
 
+**Justification**: This query is useful for evaluating the workload and capacity of healthcare facilities. By finding facilities with the most hospitalizations, managers can focus on facilities that may need extra staff, equipment, or funding to meet demand in times of crisis. It can also allow managers to optimize resource allocation by shifting patients or resources to less burdened facilities and identify trends in hospitalization demand to inform long-term planning and policy decisions about those hospitals.
 **Query**:
 
 ```
@@ -360,14 +361,11 @@ ORDER BY
     number_of_hospitalizations DESC;
 ```
 
-
 **Output**:
 
 <img width="475" alt="Screenshot 2024-12-03 at 9 10 36 PM" src="https://github.com/user-attachments/assets/1b82757c-1c25-4780-afb3-8497a67de524">
 
-
-
-**Insights**: We can see each healthcare facility along with the number of hospitalizations it has.
+**Insights**: The results reveal that facilities such as "Hope General Hospital" and "PeaceHealth Regional Hospital" handle the highest number of hospitalizations, indicating significant demand for their services. This distribution of hospitalizations across facilities reflects variations in healthcare access and capacity, with some facilities bearing a heavier workload than others. This information can help healthcare administrators address potential bottlenecks, prioritize resource allocation, and ensure that overburdened facilities receive the support they need to maintain high-quality patient care.
 # 4. Tableau Visualizations
 The Tableau visualizations provide **actionable insights** into key areas of the COVID-19 pandemic, complementing the SQL queries with interactive and visually intuitive data analysis. These visualizations are designed for managers to easily identify trends, disparities, and areas requiring intervention. All visualizations are integrated into an interactive Tableau dashboard for better usability.
 
