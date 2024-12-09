@@ -395,12 +395,14 @@ ORDER BY
 # 4. Tableau Visualizations
 The Tableau visualizations provide **actionable insights** into key areas of the COVID-19 pandemic, complementing the SQL queries with interactive and visually intuitive data analysis. These visualizations are designed for managers to easily identify trends, disparities, and areas requiring intervention. All visualizations are integrated into an interactive Tableau dashboard for better usability.
 
-## Visualization 1: ....
-image
+## Visualization 1: Total Number of Staff by Country
 
-**Description**:
+<img width="990" alt="Screenshot 2024-12-09 at 1 00 24 PM" src="https://github.com/user-attachments/assets/35706c53-89f1-41e2-9f45-c18ed68d0926">
 
-**Managerial Relevance**:
+**Description**: This Tableau visualization shows the total number of staff working at healthcare facilities in each country. It can help to show which countries have the most healthcare workers and which ones have the least amount of workers.
+
+**Managerial Relevance**: The visualization is particulary useful because in some countries there might be a need for more workers. If there is a shortage of workers in one country and an abudance in another, then you can get that country to send their workers somewhere else.
+
 ## Visualization 2: ....
 image
 
