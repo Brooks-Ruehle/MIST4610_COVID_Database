@@ -403,12 +403,14 @@ The Tableau visualizations provide **actionable insights** into key areas of the
 
 **Managerial Relevance**: The visualization is particulary useful because in some countries there might be a need for more workers. If there is a shortage of workers in one country and an abudance in another, then you can get that country to send their workers somewhere else.
 
-## Visualization 2: ....
-image
+## Visualization 2: Change in Employment Against Number of Deaths
 
-**Description**:
+<img width="651" alt="Screenshot 2024-12-09 at 1 16 59 PM" src="https://github.com/user-attachments/assets/3c67e719-e2f2-48ac-95e8-51eb89f50fce">
 
-**Managerial Relevance**:
+
+**Description**: The visualization above showcases the employment change that affected each country against the number of deaths that happened. It can be shown by the total number of deaths on the x axis and the employment change is indicated by the number next to the point associated with the country on the y axis.
+
+**Managerial Relevance**: The visualization can be used as an indicator as to why an employment change might've happened. The manager can somewhat use this to explain why an employment change might've happened but there is no direct affect we could find.
 ## Visualization 3: ....
 image
 
