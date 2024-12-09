@@ -365,7 +365,33 @@ ORDER BY
 
 <img width="475" alt="Screenshot 2024-12-03 at 9 10 36 PM" src="https://github.com/user-attachments/assets/1b82757c-1c25-4780-afb3-8497a67de524">
 
-**Insights**: The results reveal that facilities such as "Hope General Hospital" and "PeaceHealth Regional Hospital" handle the highest number of hospitalizations, indicating significant demand for their services. This distribution of hospitalizations across facilities reflects variations in healthcare access and capacity, with some facilities bearing a heavier workload than others. This information can help healthcare administrators address potential bottlenecks, prioritize resource allocation, and ensure that overburdened facilities receive the support they need to maintain high-quality patient care.
+### Query 4 Average Stay  per Healthcare Facility
+**Question**: Which healthcare facilities have the highest average stay length per individual?
+
+**Justification**: This query is useful for evaluating the average stay that a person stays at each healthcare facility. It could be indicative of where there might need to be more people to help out in each facility. There can be facilities that have an average longer stay also due to where they stay and also due to how many total patients they have.
+**Query**:
+
+```
+SELECT 
+    Healthcare_Facility.type AS facility_type,
+    COUNT(Hospitalization.idHospitalization) AS total_patients,
+    AVG(Hospitalization.length_of_stay) AS avg_stay_length
+FROM 
+    Healthcare_Facility
+JOIN 
+    Hospitalization ON Healthcare_Facility.idHealthcare_Facility = Hospitalization.idHealthcare_Facility
+GROUP BY 
+    Healthcare_Facility.type
+ORDER BY 
+    avg_stay_length DESC;
+```
+
+**Insights**: The results reveal that facilities can vary greatly on how many patients they have along with the average stay for each patient. Patients that stay longer could stay longer due to other factors and the data might not be indicative of what each facility actually needs.
+
+**Output**:
+
+<img width="312" alt="Screenshot 2024-12-08 at 8 19 57 PM" src="https://github.com/user-attachments/assets/f9b40976-4e89-4953-b713-b1979d5b28b3">
+
 # 4. Tableau Visualizations
 The Tableau visualizations provide **actionable insights** into key areas of the COVID-19 pandemic, complementing the SQL queries with interactive and visually intuitive data analysis. These visualizations are designed for managers to easily identify trends, disparities, and areas requiring intervention. All visualizations are integrated into an interactive Tableau dashboard for better usability.
 
